@@ -1,4 +1,3 @@
-usoclient StartScan
 
 reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v EnableLUA /t REG_DWORD /d 0 /f
 
@@ -14,11 +13,11 @@ choco install googlechrome -y
 choco install firefox -y
 choco install adobereader -y
 
-usoclient startdownload
 
 choco install jre8 -y
 choco install vlc -y
-choco install office365business -y
 choco install libreoffice-fresh -y
 
-usoclient startinstall
+usoclient StartScan
+usoclient startdownload
+usoclient startinstall -A
